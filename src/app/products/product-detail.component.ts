@@ -29,18 +29,6 @@ export class ProductDetailComponent implements OnInit {
       },
       error: err => this.errorMessage = err
     });
-
-    // Call service and retrieve the product
-    // this.product = {
-    //   "productId": id,
-    //   "productName": "No name",
-    //   "productCode": "No code",
-    //   "releaseDate": "No date",
-    //   "description": "No description",
-    //   "price": 0,
-    //   "starRating": 2,
-    //   "imageUrl": "assets/images/hammer.png"
-    // }
   }
 
   onBack(): void {
