@@ -20,7 +20,7 @@ export class ProductDetailComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    let id = + this.route.snapshot.paramMap.get('id'); // sign is a javascript shortcut to convert the parameter string to the numeric id
+    let id = + this.route.snapshot.paramMap.get('id'); // + sign is a javascript shortcut to convert the parameter string to the numeric id
     this.pageTitle += `: ${id}`;
     
     this.productService.getProduct(id).subscribe({
